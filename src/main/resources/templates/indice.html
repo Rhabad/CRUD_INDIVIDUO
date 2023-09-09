@@ -5,7 +5,7 @@
     <title>Pagina Inicio</title>
 </head>
 <body>
-    <h1>INICIO</h1>
+    <header th:replace="Plantilla/plantilla :: encabezado"></header>
 
     <a th:href="@{/anexar}">Alta Individuo</a>
     <br>
@@ -36,5 +36,10 @@
     </div>
 
     <div th:if="${individuos == null or individuos.empty}">No hay info en la lista</div>
+
+
+    <footer th:replace="Plantilla/plantilla :: piePagina"></footer>
+
+
 </body>
 </html>

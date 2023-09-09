@@ -6,7 +6,8 @@
         <title>Datos del nuevo individuo</title>
     </head>
     <body>
-        <h1>Datos del nuevo individuo</h1>
+        <header th:replace="Plantilla/plantilla :: encabezado"></header>
+        <h2>Datos del nuevo individuo</h2>
         <a th:href="@{/}">Volver</a>
         <br>
 
@@ -37,5 +38,7 @@
             <br>
             <input type="submit" name="salvar" value="Salvar">
         </form>
+
+        <footer th:replace="Plantilla/plantilla :: piePagina"></footer>
     </body>
 </html>
